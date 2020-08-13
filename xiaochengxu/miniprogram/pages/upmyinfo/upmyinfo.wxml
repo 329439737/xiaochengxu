@@ -1,0 +1,39 @@
+<!--miniprogram/pages/upmyinfo/upmyinfo.wxml-->
+<view class="upmyinfo">
+  <navigator url="../upmyinfo/upimg/upimg" open-type="navigate">
+      <view class="upmyinfo-list">
+        <text>修改头像</text>
+         <text class="iconfont iconarrowRight"></text>
+      </view>
+  </navigator>
+   <navigator url="../upmyinfo/upname/upname" open-type="navigate">
+      <view class="upmyinfo-list">
+        <text>修改昵称</text>
+         <text class="iconfont iconarrowRight"></text>
+      </view>
+    </navigator>
+    <navigator url="../upmyinfo/upqianming/upqianming" open-type="navigate">
+      <view class="upmyinfo-list">
+        <text>修改个性签名</text>
+         <text class="iconfont iconarrowRight"></text>
+      </view>
+    </navigator>
+      <navigator url="../upmyinfo/upadress/upadress" open-type="navigate">
+      <view class="upmyinfo-list">
+        <text>共享位置</text>
+         <text class="iconfont iconarrowRight"></text>
+      </view>
+     </navigator>
+      <navigator url="../upmyinfo/upphone/upphone" open-type="navigate">
+      <view class="upmyinfo-list">
+        <text>设置手机号 <text class="upmyinfo-list-txt1">仅好友可见</text></text>
+         <text class="iconfont iconarrowRight"></text>
+      </view>
+     </navigator>
+       <navigator url="../upmyinfo/upweixinno/upweixinno" open-type="navigate">
+      <view class="upmyinfo-list">
+        <text>设置微信号 <text class="upmyinfo-list-txt1">仅好友可见</text></text> 
+         <text class="iconfont iconarrowRight"></text>
+      </view>
+     </navigator>
+</view>

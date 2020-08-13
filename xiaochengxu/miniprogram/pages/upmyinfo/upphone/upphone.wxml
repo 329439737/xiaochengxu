@@ -1,0 +1,3 @@
+<!--miniprogram/pages/upmyinfo/upphone/upphone.wxml-->
+<button class="btn" bindtap="btncilck">保存手机号</button>
+<input type="number" class="upqianmian" value="{{phoneNumber }}" bindinput="clickinput"></input>

@@ -1,0 +1,65 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/near/near",
+    "pages/message/message",
+    "pages/user/user",
+    "pages/myinfo/myinfo",
+    "pages/upmyinfo/upmyinfo",
+    "pages/friendlist/friendlist",
+    "pages/upmyinfo/upadress/upadress",
+    "pages/upmyinfo/upimg/upimg",
+    "pages/upmyinfo/upname/upname",
+    "pages/upmyinfo/upphone/upphone",
+    "pages/upmyinfo/upqianming/upqianming",
+    "pages/upmyinfo/upweixinno/upweixinno",
+    "pages/index/xiangqing/xiangqing",
+    "pages/chats/chats",
+    "pages/riji/riji",
+    "pages/mynotepad/mynotepad"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#11b5ea",
+    "navigationBarTitleText": "你来我往",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#d0dadb",
+    "selectedColor": "#0c7df0",
+    "list": [
+      {
+        "iconPath": "images/tabbar/首页.png",
+        "selectedIconPath": "images/tabbar/首页_active.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "images/tabbar/附近.png",
+        "selectedIconPath": "images/tabbar/附近_active.png",
+        "pagePath": "pages/near/near",
+        "text": "附近"
+      },
+      {
+        "iconPath": "images/tabbar/消息.png",
+        "selectedIconPath": "images/tabbar/消息_active.png",
+        "pagePath": "pages/message/message",
+        "text": "信息"
+      },
+      {
+        "iconPath": "images/tabbar/我的.png",
+        "selectedIconPath": "images/tabbar/我的_active.png",
+        "pagePath": "pages/user/user",
+        "text": "我的"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置仅在此使用"
+    }
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

@@ -1,0 +1,5 @@
+<!--miniprogram/pages/upmyinfo/upname/upname.wxml-->
+<!--miniprogram/pages/upmyinfo/upphone/upphone.wxml-->
+<button class="btn"  open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">使用微信昵称</button>
+<button class="btn" bindtap="btncilck">保存昵称</button>
+<input type="text" class="upqianmian" value="{{nickName }}" bindinput="clickinput"></input>

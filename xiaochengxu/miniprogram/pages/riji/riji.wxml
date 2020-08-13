@@ -1,0 +1,8 @@
+<!--miniprogram/pages/riji/riji.wxml-->
+<form catchsubmit="formSubmit" catchreset="formReset"> 
+<textarea class="weui-input" name="input" placeholder="说点什么..." ></textarea>
+  <button style="width:100%;height:100rpx" type="primary" formType="submit" class="btn">扔进漂流瓶</button>
+</form>
+
+
+

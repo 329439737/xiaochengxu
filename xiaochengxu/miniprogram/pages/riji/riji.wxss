@@ -1,0 +1,7 @@
+/* miniprogram/pages/riji/riji.wxss */
+.btn{
+  position: fixed;bottom: 0rpx;
+}
+textarea{
+  width: 100%;height: 300rpx;margin-top:15rpx
+}

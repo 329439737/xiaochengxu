@@ -1,0 +1,3 @@
+<!--miniprogram/pages/upmyinfo/upweixinno/upweixinno.wxml-->
+<button class="btn" bindtap="btncilck">保存微信号</button>
+<input class="upqianmian" value="{{weixinNumber}}" bindinput="clickinput"></input>

@@ -1,0 +1,11 @@
+<!--miniprogram/pages/mynotepad/mynotepad.wxml-->
+<view wx:for="{{ notepad }}" wx:key="index">
+ <view class="friendList-item">
+      <view>
+        <text>{{ item.notepad }}</text>
+        <!--<text>{{ item._id }}</text>--> 
+      </view>
+     <text class="iconfont iconarrowRight" bindtap="del" data-id="{{ item._id }}">删除</text>
+    </view>
+</view>
+

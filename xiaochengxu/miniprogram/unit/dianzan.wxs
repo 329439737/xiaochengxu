@@ -1,0 +1,10 @@
+var dianzan = function(number){
+  if(number>=1000&&number<10000){
+    number = (number/1000).toFixed(1)+"k"
+  }
+  else if(number>=10000){
+    number = (number/10000).toFixed(1)+"w"
+  }
+  return number
+}
+module.exports.dianzan = dianzan;

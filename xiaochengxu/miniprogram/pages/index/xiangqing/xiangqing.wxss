@@ -1,0 +1,21 @@
+/* miniprogram/pages/index/xiangqing/xiangqing.wxss */
+.btn{
+  background-color: transparent;
+}
+.list{
+  margin-left: 10rpx;height: 100rpx;border-bottom: 1px darkcyan solid;margin-right: 10rpx;
+  align-items: center;display: flex;padding-left: 10rpx;
+}
+.list image{
+  width: 80rpx;height: 80rpx;border-radius: 50%;
+}
+.zujian{
+  margin-right: 20rpx;
+}
+.txt2{
+  color: red;
+}
+.butt{
+  position:absolute;bottom: 0rpx;text-align: center;
+  
+}

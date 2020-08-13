@@ -1,0 +1,36 @@
+<!--miniprogram/pages/index/index.wxml-->
+<wxs src="../../unit/index.wxs" module="m1"/>
+<wxs src="../../unit/dianzan.wxs" module="m2"/>
+<search/>
+<view class="index">
+<!--轮播图-->
+ <swiper class="index-swiper" indicator-dots="{{true}}"
+    autoplay="{{false}}" circular="{{true}}">
+    <block wx:for="{{imgUrls}}" wx:key="index">
+      <swiper-item>
+        <image src="{{item.fileId}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <!--tabbar-->
+  <view class="index-tab">
+   <view class="{{current == 'links'?'active':''}}" data-current="links" bindtap="tabclick">推荐</view>
+     <view class="{{current == 'time'?'active':''}}" data-current="time" bindtap="tabclick">最新</view>
+   </view>
+   <!--列表-->
+   <view class="index-list">
+     <view class="index-list-item" wx:for="{{listsjon}}" wx:key="index">
+       <image src="{{item.userPhoto}}" data-id="{{item._id}}" bindtap="xiangqing" ></image>
+        <view class="index-list-text">
+        <text>{{m1.wordspilt(item.nickName)}}</text>
+        <text data-id="{{item._id}}" bindtap="txtbtn">
+           <text class="iconfont icondianzan"></text> 
+            <text>{{m2.dianzan(item.links)}}</text>
+        </text>
+       </view>
+       
+     </view>
+     </view>
+      <!----->
+   </view>
+

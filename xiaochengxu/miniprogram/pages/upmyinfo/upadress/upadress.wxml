@@ -1,0 +1,4 @@
+<!--miniprogram/pages/upmyinfo/upadress/upadress.wxml-->
+<text>开始共享位置</text>
+<switch  bindchange="switch1Change" checked="{{isLocation}}"/>
+ 

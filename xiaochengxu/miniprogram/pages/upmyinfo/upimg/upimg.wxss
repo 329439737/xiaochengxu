@@ -1,0 +1,11 @@
+/* miniprogram/pages/upmyinfo/upimg/upimg.wxss */
+.upqianmian{
+  border-bottom: 1px lawngreen solid;height: 100rpx;
+  margin: 20rpx 20rpx;
+}
+.btn{
+  width: 100%;display: block;background:transparent;margin: 0 auto;
+}
+.img{
+  margin-left: 10rpx;width: 600rpx;height: 600rpx;border-radius: 10rpx;margin:0 auto ;display: block;
+}

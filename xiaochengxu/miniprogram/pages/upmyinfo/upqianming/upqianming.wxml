@@ -1,0 +1,5 @@
+<!--miniprogram/pages/upmyinfo/upqianming/upqianming.wxml-->
+<button class="btn" bindtap="btncilck">保存个性签名</button>
+<input class="upqianmian" value="{{signature }}" bindinput="clickinput"></input>
+
+

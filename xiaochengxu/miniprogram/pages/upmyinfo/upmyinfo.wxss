@@ -1,0 +1,11 @@
+/* miniprogram/pages/upmyinfo/upmyinfo.wxss */
+.upmyinfo{
+  margin-top: 40rpx;
+}
+.upmyinfo-list{
+  height: 100rpx;border-bottom: 1px solid #b4b5b6;display: flex;justify-content: space-between;align-items: center;padding-left: 15rpx;
+}
+.upmyinfo-list-txt1
+{
+  font-size: 12px;color: red;
+}

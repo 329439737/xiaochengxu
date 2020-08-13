@@ -1,0 +1,14 @@
+<!--miniprogram/pages/chats/chats.wxml-->
+
+<view class="main" bindtap="xiangqign">
+<view>
+  <text data-name="{{username}}" data-userid="{{userid}}">当前聊天对象：{{username}}</text>  
+ 
+</view>
+<view class="aa">
+   <text class="iconfont iconarrowRight "></text>
+</view>
+</view>
+<!----->
+
+

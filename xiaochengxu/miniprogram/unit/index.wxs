@@ -1,0 +1,8 @@
+var wordspilt = function(word){
+  if(word.length>4){
+     word = word.substring(0,4)+"..."
+  }
+ 
+return word
+}
+ module.exports.wordspilt = wordspilt;

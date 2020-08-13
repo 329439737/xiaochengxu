@@ -1,0 +1,17 @@
+<!--miniprogram/pages/friendlist/friendlist.wxml-->
+<view class="friendList">
+<text wx:if="{{!isno}}">暂无好友</text>
+<block wx:else>
+ <text>好友列表：</text>
+  <navigator wx:for="{{ friendList }}" wx:key="index" url="{{ '../index/xiangqing/xiangqing?userid=' + item._id }}" open-type="navigate">
+    <view class="friendList-item">
+      <view>
+        <image src="{{ item.userPhoto }}" />
+        <text>{{ item.nickName }}</text>
+      </view>
+      <text class="iconfont iconarrowRight"></text>
+    </view>
+  </navigator>
+</block>
+ 
+</view>

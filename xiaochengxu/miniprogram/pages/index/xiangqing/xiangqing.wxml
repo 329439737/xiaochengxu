@@ -1,0 +1,43 @@
+<!--miniprogram/pages/index/xiangqing/xiangqing.wxml-->
+<block wx:if="{{ishelide}}">
+<button class="btn" wx:if="{{isfriend}}">已是好友</button>
+<button bindtap="addbtn" class="btn" wx:else>添加好友</button>
+</block>
+
+<view class="list">
+ <text>昵称：</text>
+ <text>{{xiangqing.nickName}}</text>
+</view>
+<view class="list">
+ <text>头像:</text>
+ <image src="{{xiangqing.userPhoto}}"  />
+
+</view>
+<view class="list">
+ <text>个性签名:</text>
+ <text>{{xiangqing.signature}}</text>
+</view>
+<view class="list">
+ <text >手机号：</text>
+ <block wx:if="{{isfriend}}">
+ <text class="zujian">{{xiangqing.phoneNumber}}</text>
+ <call-phone wx:if="{{xiangqing.phoneNumber}}" phonenum="{{xiangqing.phoneNumber}}"/>
+ </block>
+ <text wx:else class="txt2">仅好友可见</text>
+</view>
+<view class="list">
+ <text>微信号：</text>
+ <block wx:if="{{isfriend}}">
+ <text class="zujian">{{xiangqing.weixinNumber}}</text>
+   <copy-text wx:if="{{xiangqing.weixinNumber}}" weixin="{{xiangqing.weixinNumber}}"/>
+ </block>
+
+  <text wx:else class="txt2">仅好友可见</text>
+</view>
+
+<button wx:if="{{ismyself}}" class="butt" style="width: 100%" data-name="{{xiangqing.nickName}}" data-userid="{{xiangqing._id}}" bindtap="btn">聊天</button>
+
+<button wx:else class="butt" style="width: 100%" data-name="{{xiangqing.nickName}}" data-userid="{{xiangqing._id}}" bindtap="btn1">查看我的好友列表</button>
+
+
+

@@ -1,0 +1,48 @@
+<!--miniprogram/pages/user/user.wxml-->
+<view class="user">
+ <view class="user-info">
+ 
+   <image src="{{userPhoto}}"/>
+   <text wx:if="{{logged}}">欢迎你：{{nickName}}</text>
+    <button wx:else disabled="{{disabled}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">账号登录</button>
+
+ </view> 
+ <!--编辑信息-->
+    <view class="user-list" wx:if="{{logged}}">
+     <navigator url="../upmyinfo/upmyinfo" open-type="navigate">
+      <view class="user-list-item">
+      
+        <text>编辑个人信息</text>
+         <text class="iconfont iconarrowRight"></text>
+      </view>
+     </navigator>
+
+      <navigator url="../friendlist/friendlist" open-type="navigate">
+      <view class="user-list-item">
+        <text>查看好友列表</text>
+         <text class="iconfont iconarrowRight"></text>
+      </view>
+     </navigator>
+
+      <navigator url="{{'../index/xiangqing/xiangqing?userid='+id}}" open-type="navigate">
+      <view class="user-list-item">
+        <text>个人主页</text>
+         <text class="iconfont iconarrowRight"></text>
+      </view>
+     </navigator>
+     <!---->
+     <navigator url="{{'../riji/riji?userid='+id}}" open-type="navigate">
+      <view class="user-list-item">
+        <text>记录点滴</text>
+         <text class="iconfont iconarrowRight"></text>
+      </view>
+     </navigator>
+     <!--我的漂流瓶-->
+      <navigator url="{{'../mynotepad/mynotepad?userid='+id}}" open-type="navigate">
+      <view class="user-list-item">
+        <text>我的漂流瓶</text>
+         <text class="iconfont iconarrowRight"></text>
+      </view>
+     </navigator>
+    </view>
+</view>
